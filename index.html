@@ -1,0 +1,74 @@
+<html>
+<head> 
+<link rel="stylesheet" href="style.css">
+<title>Nanonauts Run!</title>
+<link rel="shortcut icon" href="Nanonaut.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@200&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="title" content="Nanonauts Run">
+    <meta name="description"
+        content="Nanonaut needs to accomplish an adventure! he'd need to deal with obstacles that could hurt him! tune in for upcoming updates. (Work in progress)">
+</head>
+<body onload="onloadFunction()">
+    <div id="container">
+        <div id="loader">
+        </div> 
+    </div>
+    <div id="content">
+        <h1>NANONAUTS RUN!</h1>
+        </div>
+        <div id="how"><p><span>How to play: </span> Space key/Click for jumping</p>
+            </div>
+
+        <div id="goToGame">
+            <img src="DEMO.png">
+            <a href="Game page.html"> PLAY NOW! </a>
+        </div>
+    <div id="bg"></div>
+    <div id="message">
+    <button id="btn" title="Close"> <img src="close btn.png"> </button>
+    <h4 align="center">The game is still undergoing progress. Your suggestions are really important to me! please contact me <a href="mailto:manyatapawagi@gmail.com">here</a></h4>
+    <p> <span> Updates added recently: </span> 
+        <li class="tick">Clashing Robos</li>
+        <li class="tick">Shrinking Screen</li>
+        <li class="tick">Points scored</li>
+        <li class="tick">Game Over Notification</li>
+        <li class="tick">Compatibility for Mobile/Tablet users</li></p> 
+        <div id="foot">
+            <!-- <img id="ils" src="illustration.png"> -->
+            <p id="p">Copyright © 2021 Manyata Pawagi. All rights reserved.</p>
+        </div>
+    </div>
+    
+</body>
+<script>
+
+    console.log("%cWelcome to Nanonauts Run!", 'color: purple; font-size: 30px; font-family: sans-serif; border: 3px solid white;')
+     
+    var loader = document.getElementById("loader");
+    var blacker = document.getElementById("container");
+    var body = document.getElementsByTagName("body");
+    function onloadFunction(){
+        loader.style.animation = "none";
+        blacker.style.display = "none";
+    };
+
+    var bg = document.getElementById("bg");
+    var popup = document.getElementById("message");
+    var btn = document.getElementById("btn");
+
+    document.getElementById("btn").addEventListener("click", function () {
+        popup.style.display = "none";
+        bg.style.display = "none";
+    });
+
+    document.getElementById("bg").addEventListener("click", function(){
+        popup.style.display = "none";
+        bg.style.display = "none";
+    });
+</script>
+</html>
